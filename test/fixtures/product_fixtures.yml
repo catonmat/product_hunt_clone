@@ -1,0 +1,15 @@
+<% 1.upto(5) do |i| %>
+product_<%= i %>:
+  name: <%= Faker::Company.name %>
+  tagline: <%= Faker::Company.catch_phrase %>
+<% end %>
+
+rubyonrails:
+  id: 6
+  name: Ruby on Rails
+  tagline: http://www.rubyonrails.org
+
+google:
+  id: 7
+  name: Google
+  tagline: http://www.google.com

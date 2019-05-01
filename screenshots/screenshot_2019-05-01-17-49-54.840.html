@@ -1,0 +1,64 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>TODO</title>
+    
+    <meta name="action-cable-url" content="/cable" />
+    <link rel="stylesheet" media="all" href="/assets/application-ec5e6b7f59c88d35fa618009013c5bef6e2aa0abf2d06a2f8dd2b3a647d6d840.css" />
+     <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+  </head>
+  <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="#">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messages</a>
+        </li>
+        <li class="nav-item dropdown">
+          <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" rel="nofollow" data-method="delete" href="/users/sign_out">Log out</a>
+          </div>
+        </li>
+    </ul>
+  </div>
+</div>
+
+    
+    <h1>Test</h1>
+
+<form action="/products" method="post">
+  <input type="hidden" name="authenticity_token" value="vBBG9U9HBsDt/ZSuGsBnvfO/P/zKPRN/R/43/W/xbKrB6Zcs1xuVv0helf8rITpDbCfiZIt2NrvgViYOFQJJgg==" />
+  <div class="form-group">
+    <label for="formComtrolProductName">Product Name: </label>
+    <input type="text" id="formControlProductName" class="test_product_name" placeholder="Enter your product name" name="product[:name]" />
+  </div>
+  <div class="form-group">
+    <label for="formControlTagline">Product Tagline: </label>
+    <input type="text" id="formControlTagline" class="test_proudct_tagline" name="product[:tagline]" placeholder="tagline" />
+  </div>
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="formCheckSendToFriend" class="form-check-input" />
+    <label class="form-check-label" for="formCheckSendToFriend">Send to friend</label>
+  </div>
+  <button type="submit">Create Product</button>
+</form>
+
+    <script src="/assets/application-33fb130d4bd6a80dd802ecb7e62d81f0352b216dafcfb5f9924faf746d384969.js"></script>
+    <script src="/packs-test/js/application-b3c044df713ff1b400a3.js"></script>
+  
+
+</body></html>

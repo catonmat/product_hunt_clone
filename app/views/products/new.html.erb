@@ -1,0 +1,18 @@
+<h1>Test</h1>
+
+<form action="/products" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <div class="form-group">
+    <label for="formComtrolProductName">Product Name: </label>
+    <input type="text" id="formControlProductName" class="test_product_name" placeholder="Enter your product name" name="product[:name]">
+  </div>
+  <div class="form-group">
+    <label for="formControlTagline">Product Tagline: </label>
+    <input type="text" id="formControlTagline" class="test_proudct_tagline" name="product[:tagline]" placeholder="tagline">
+  </div>
+  <div class="form-check form-check-inline">
+    <input type="checkbox" id="formCheckSendToFriend" class="form-check-input">
+    <label class="form-check-label" for="formCheckSendToFriend">Send to friend</label>
+  </div>
+  <button type="submit">Create Product</button>
+</form>
